@@ -1,0 +1,223 @@
+/*------------------- FONT FACE -------------------*/
+@font-face {
+  font-family: ABeeZee; /*a name to be used later*/
+  src: url('../fonts/ABeeZee.otf'); /*URL to font*/
+}
+@font-face {
+  font-family: Aller; /*a name to be used later*/
+  src: url('../fonts/Aller.ttf'); /*URL to font*/
+}
+@font-face {
+  font-family: Tribal Animal; /*a name to be used later*/
+  src: url('../fonts/Tribal_Animal.ttf'); /*URL to font*/
+}
+@font-face {
+  font-family: Horse; /*a name to be used later*/
+  src: url('../fonts/Horse.ttf'); /*URL to font*/
+}
+@font-face {
+  font-family: Lions; /*a name to be used later*/
+  src: url('../fonts/Lions.ttf'); /*URL to font*/
+}
+/*---------------------- BODY ----------------------*/
+body {
+  font-family: Aller;
+}
+/*--------------------- NAVBAR ---------------------*/
+#mobileNav {
+  display: none;
+  width: 100%;
+}
+.clearNav {
+  width: 100%;
+  height: auto;
+  background-color: transparent; 
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  position: fixed;
+  z-index: 3;
+  box-shadow: 0;
+}
+.whiteNav {
+  background-color: white !important; 
+  color: black !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.reserve {
+  border: 2px solid white !important;
+  border-radius: 0px !important;
+  color: white !important;
+  background-color: transparent !important;
+}
+.reserve:hover {
+  color: black !important;
+  background-color: white !important;
+}
+
+.breserve {
+  border: 2px solid black !important;
+  color: black !important;
+}
+.breserve:hover {
+  color: white !important;
+  background-color: black !important;
+}
+
+.signin {
+  border: 0px !important;
+  border-radius: 0px !important;
+  color: white !important;
+  background-color: transparent !important;
+}
+.signin:hover {
+  color: white !important;
+  border-bottom:2px solid white !important;
+}
+
+.bsignin {
+  color: black !important;
+  background-color: transparent !important;
+}
+.bsignin:hover {
+  color: black !important;
+  border-bottom:2px solid black !important;
+}
+
+.navbar-center {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    display: block;
+}
+
+.navbar-middle {
+  color: white;
+}
+.navbar-middle:hover {
+  color: white;
+  border-bottom:2px solid white;
+}
+.navbar-middle:focus {
+  color: white;
+  border-bottom:2px solid white;
+}
+
+.bnavbar-middle {
+  color: black;
+}
+.bnavbar-middle:hover {
+  color: black;
+  border-bottom:2px solid black;
+}
+.bnavbar-middle:focus {
+  color: black;
+  border-bottom:2px solid black;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+a {
+  text-decoration: none;
+}
+
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+/*--------------------- PARALLAX ---------------------*/
+.parallax-window {
+  min-height: 420px;
+  background: transparent;
+}
+/*---------------------- CONTENT ---------------------*/
+.content-offers {
+  position: absolute;
+  transform: translateY(100%);
+}
+
+@media only screen and (max-width: 780px) {
+    #pesan {
+      transform:translateY(0%) !important;
+    }
+    #mobileNav {
+      display: block !important;
+    }
+    #desktopNav {
+      display: none !important;
+    }
+}
